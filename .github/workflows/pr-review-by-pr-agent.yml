@@ -18,7 +18,7 @@ jobs:
         uses: docker://codiumai/pr-agent:0.28-github_action
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PROVIDER: openai
+          #PROVIDER: openai
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           CONFIG.MODEL: "gpt-3.5-turbo"
-          OPENAI_API_BASE: "https://api.openai.com/v1"
+          #OPENAI_API_BASE: "https://api.openai.com/v1"
