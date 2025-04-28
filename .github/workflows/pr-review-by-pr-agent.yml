@@ -13,7 +13,7 @@ jobs:
       issues: write
     steps:
       - name: Run PR Review by PR Agent
-        uses: Codium-ai/pr-agent@v0.10.0
+        uses: Codium-ai/pr-agent@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROVIDER: openai
