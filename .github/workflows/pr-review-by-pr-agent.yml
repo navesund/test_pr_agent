@@ -15,7 +15,7 @@ jobs:
       issues: write
     steps:
       - name: Run PR Review by PR Agent
-        uses: codiumai/pr-agent@v0.28
+        uses: docker://codiumai/pr-agent:0.28-github_action
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROVIDER: openai
