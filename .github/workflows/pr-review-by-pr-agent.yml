@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Run PR Review by PR Agent
         uses: Codium-ai/pr-agent@main
-        with:
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROVIDER: openai
           OPENAI_KEY: ${ secrets.OPENAI_KEY }
