@@ -18,7 +18,7 @@ public class userService {
     public static void main(String[] args) {
         userService user = new userService("admin", "password");
         if (user.authenticate()) {
-            System.out.println("Authentication successful!");
+            System.out.println("Authentication is successful!");
         } else {
             System.out.println("Authentication failed.");
         }
