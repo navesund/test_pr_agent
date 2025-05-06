@@ -22,3 +22,4 @@ jobs:
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           CONFIG.MODEL: "gpt-3.5-turbo"
           #OPENAI_API_BASE: "https://api.openai.com/v1"
+          PR_AGENT_CONFIG_PATH: .pr-agent/config.yaml
