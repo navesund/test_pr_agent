@@ -15,6 +15,10 @@ public class userService {
         return "admin".equals(username) && "password".equals(password);
     }
 
+    public String getUsername() {
+        return username;
+    }
+
     public static void main(String[] args) {
         userService user = new userService("admin", "password");
         if (user.authenticate()) {
