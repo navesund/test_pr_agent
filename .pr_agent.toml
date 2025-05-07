@@ -1,2 +1,4 @@
-[PR_REVIEW]
+[GITHUB_ACTION_CONFIG]
+auto_describe = false
+auto_improve = false
 auto_review = true
