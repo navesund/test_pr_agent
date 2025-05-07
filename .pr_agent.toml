@@ -1,4 +1,7 @@
-[GITHUB_ACTION_CONFIG]
+[github_action_config]
 auto_describe = false
 auto_improve = false
 auto_review = true
+
+[pr_reviewer]
+inline_code_comments = true
