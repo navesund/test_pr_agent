@@ -1,9 +1,2 @@
 [PR_REVIEW]
 auto_review = true
-comment_mode = "inline"
-
-[PR_DESCRIPTION]
-auto_description = false
-
-[PR_CODE_SUGGESTIONS]
-auto_suggestions = false
