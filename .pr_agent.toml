@@ -5,3 +5,6 @@ auto_review = true
 
 [pr_reviewer]
 inline_code_comments = true
+
+[pr_review]
+comment_mode = "inline"
