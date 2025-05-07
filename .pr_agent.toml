@@ -1,4 +1,4 @@
 [GITHUB_ACTION_CONFIG]
-auto_describe = false
+auto_describe = true
 auto_improve = false
 auto_review = true
