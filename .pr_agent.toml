@@ -1,5 +1,5 @@
 [PR_REVIEW]
-auto_review = true
+auto_review = false
 comment_mode = "inline"
 
 [PR_DESCRIPTION]
