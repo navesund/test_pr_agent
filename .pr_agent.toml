@@ -6,3 +6,6 @@ auto_review = true
 [pr_reviewer]
 auto_review = true
 inline_code_comments = true
+
+[config]
+log_level="DEBUG"
