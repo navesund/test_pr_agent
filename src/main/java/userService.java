@@ -11,20 +11,12 @@ public class userService {
         this.password = password;
     }
 
-    public boolean authenticate() {
-        return "admin".equals(username) && "password".equals(password);
-    }
-
     public String getUsername() {
         return username;
     }
 
     public static void main(String[] args) {
         userService user = new userService("admin", "password");
-        if (user.authenticate()) {
-            System.out.println("Authentication is successful!");
-        } else {
-            System.out.println("Authentication failed.");
-        }
+        System.out.println("Username: " + user.getUsername());
     }
 }
