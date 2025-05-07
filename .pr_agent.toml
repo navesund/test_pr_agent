@@ -4,8 +4,5 @@ auto_improve = false
 auto_review = true
 
 [pr_reviewer]
-inline_code_comments = true
-
-[PR_REVIEW]
 auto_review = true
-comment_mode = "inline"
+inline_code_comments = true
