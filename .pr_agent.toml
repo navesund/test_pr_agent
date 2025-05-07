@@ -3,5 +3,5 @@ auto_describe = false
 auto_improve = false
 auto_review = true
 
-[PR_REVIEWER]
+[PR_REVIEW]
 inline_code_comments = true
