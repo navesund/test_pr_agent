@@ -1,9 +1,4 @@
-[PR_REVIEW]
+[GITHUB_ACTION_CONFIG]
+auto_describe = false
+auto_improve = false
 auto_review = true
-comment_mode = "inline"
-
-[PR_DESCRIPTION]
-auto_description = false
-
-[PR_CODE_SUGGESTIONS]
-auto_suggestions = false
