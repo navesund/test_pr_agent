@@ -1,4 +1,13 @@
-[GITHUB_ACTION_CONFIG]
-auto_describe = true
-auto_improve = false
+[CONFIG]
+model = "gpt-3.5-turbo"
+log_level = "debug"
+
+[PR_REVIEWER]
 auto_review = true
+review_on_pr_open = true
+review_on_push = true
+inline_code_comments = true
+
+[GITHUB_ACTION_CONFIG]
+auto_describe = false
+auto_improve = false
