@@ -21,6 +21,6 @@ jobs:
           #PROVIDER: openai
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           CONFIG.MODEL: "gpt-3.5-turbo"
-          CONFIG.LOG_LEVEL: "debug"
+          PR_REVIEWER.INLINE_CODE_COMMENTS: true
           # GITHUB_ACTION_CONFIG.AUTO_DESCRIBE: false
           #OPENAI_API_BASE: "https://api.openai.com/v1"

@@ -2,7 +2,3 @@
 auto_describe = false
 auto_improve = false
 auto_review = true
-
-[PR_REVIEWER]
-auto_review = true
-inline_code_comments = true
