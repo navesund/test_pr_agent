@@ -16,7 +16,7 @@ public class userService {
     }
 
     public boolean authenticate(String userName, String Password) {
-        return this.username.equals(userName) && this.password.equals(Password);
+        return this.username == userName && this.password == Password;
     }
 
     public static void main(String[] args) {
