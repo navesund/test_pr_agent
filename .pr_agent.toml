@@ -7,4 +7,5 @@ auto_review = true
 inline_code_comments = true
 
 [pr_review]
+auto_review = true
 comment_mode = "inline"
