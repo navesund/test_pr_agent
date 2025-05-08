@@ -1,6 +1,7 @@
 [config]
 model = "gpt-3.5-turbo"
 log_level = "debug"
+verbosity_level = 2
 
 [pr_reviewer]
 auto_review = true
