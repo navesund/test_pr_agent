@@ -13,3 +13,4 @@ enable_review_labels_effort=false
 
 [github_action_config]
 auto_describe = false
+auto_improve = false
