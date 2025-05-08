@@ -8,6 +8,7 @@ review_on_pr_open = true
 review_on_push = true
 inline_code_comments = true
 num_code_suggestion = 5
+enable_review_labels_effort=false
 
 [GITHUB_ACTION_CONFIG]
 auto_describe = false
