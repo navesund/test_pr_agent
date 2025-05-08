@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Run PR Review by PR Agent
         # uses: docker://codiumai/pr-agent:0.28-github_action
-        uses: codium-ai/pr-agent@latest
+        uses: Codium-ai/pr-agent@0.28-github_action
         env:
           GITHUB_TOKEN: ${{ secrets.PR_AGENT_TOKEN }}
           #PROVIDER: openai
