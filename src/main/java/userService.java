@@ -51,9 +51,20 @@ public class userService {
     public int getNumberOfUsers(List<userService> usersList) {
         int numberOfUsers = 0;
         for(int i=0; i<usersList.size(); i++) {
-            numberOfUsers++;
+            numberOfUsers = numberOfUsers + 1;
         }
         return numberOfUsers;
+    }
+
+    public boolean isUserAvailable(String userName, List<userService> usersList) {
+        boolean isUserFound = false;
+        for(int i=0; i<usersList.size(); i++) {
+            if(usersList.get(i).getUsername().equals(userName)) {
+                isUserFound = true;
+                break;
+            }
+        }
+        return isUserFound;
     }
 
     public static void main(String[] args) {
