@@ -1,9 +1,9 @@
-[CONFIG]
+[config]
 model = "gpt-3.5-turbo"
 log_level = "debug"
 verbosity_level = 2
 
-[PR_REVIEWER]
+[pr_reviewer]
 auto_review = true
 review_on_pr_open = true
 review_on_push = true
@@ -11,5 +11,5 @@ inline_code_comments = true
 num_code_suggestion = 5
 enable_review_labels_effort=false
 
-[GITHUB_ACTION_CONFIG]
+[github_action_config]
 auto_describe = false
