@@ -4,7 +4,7 @@ public class securityIssue {
     public static void main(String[] args) {
         String userName = "user123";
         String password = "password123";
-        String userToken = "qwertyuuiopcnfhjdj12jbhb56"; //Dummy token
+        String userToken = "qwwdf2324789djfhjdbqwt7w8r7ub";
         login(userName, password, userToken);
     }
 
