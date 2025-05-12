@@ -18,3 +18,4 @@ enable_help_text = true
 auto_describe = false
 auto_improve = true
 auto_review = true
+pr_actions = ['opened', 'reopened', 'ready_for_review', 'synchronize']
