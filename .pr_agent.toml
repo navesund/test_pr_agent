@@ -19,3 +19,8 @@ auto_describe = false
 auto_improve = true
 auto_review = true
 pr_actions = ['opened', 'reopened', 'ready_for_review', 'synchronize']
+[custom_rules.detect_system_out]
+enabled = true
+run_on_events = ['opened', 'reopened', 'ready_for_review', 'synchronize']
+regex = "System\\.out\\.println"
+message="Please avoid using `System.out.println`; Use Loggers instead"
