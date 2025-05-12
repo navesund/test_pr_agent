@@ -4,11 +4,16 @@ log_level = "debug"
 verbosity_level = 2
 [pr_reviewer]
 inline_code_comments = true
+run_on_commit = true
+minimal_commits_for_incremental_review = 0
+enable_help_text = true
 [pr_code_suggestions]
 summarize = false
 auto_extended_mode = true
 commitable_code_suggestions = true
 suggestions_score_threshold = 7
+run_on_commit = true
+enable_help_text = true
 [github_action_config]
 auto_describe = false
 auto_improve = true
