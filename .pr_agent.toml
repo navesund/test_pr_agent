@@ -12,8 +12,8 @@ summarize = false
 auto_extended_mode = true
 commitable_code_suggestions = true
 suggestions_score_threshold = 7
-run_on_commit = true
 enable_help_text = true
+extra_instructions = "Detect usage of System.out.println and suggest to use logger instead"
 [github_action_config]
 auto_describe = false
 auto_improve = true
