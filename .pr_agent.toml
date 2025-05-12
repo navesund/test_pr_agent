@@ -1,5 +1,5 @@
 [config]
-model = "gpt-3.5-turbo"
+model = "gpt-4o-2024-11-20"
 log_level = "debug"
 verbosity_level = 2
 [pr_reviewer]
@@ -7,6 +7,7 @@ inline_code_comments = true
 [pr_code_suggestions]
 summarize = false
 auto_extended_mode = true
+commitable_code_suggestions = true
 [github_action_config]
 auto_describe = false
 auto_improve = true
