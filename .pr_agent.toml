@@ -1,5 +1,5 @@
 [config]
-model = "gpt-3.5-turbo"
+model = "o4-mini"
 log_level = "debug"
 verbosity_level = 2
 [pr_reviewer]
