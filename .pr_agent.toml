@@ -13,7 +13,7 @@ auto_extended_mode = true
 commitable_code_suggestions = true
 suggestions_score_threshold = 7
 enable_help_text = true
-extra_instructions = "Detect usage of System.out.println and suggest to use logger instead"
+extra_instructions = "Detect usage of System.out.println and suggest to use logger instead.Detect the usage of Thread.sleep.Avoid empty catch blocks. Encourage to use equalsIgnoreCase instead of equals"
 [github_action_config]
 auto_describe = false
 auto_improve = true
