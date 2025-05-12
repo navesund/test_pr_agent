@@ -8,6 +8,7 @@ inline_code_comments = true
 summarize = false
 auto_extended_mode = true
 commitable_code_suggestions = true
+suggestions_score_threshold = 7
 [github_action_config]
 auto_describe = false
 auto_improve = true
