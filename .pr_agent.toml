@@ -1,5 +1,5 @@
 [config]
-model = "o4-mini"
+model = "gpt-4o-2024-11-20"
 log_level = "debug"
 verbosity_level = 2
 [pr_reviewer]
