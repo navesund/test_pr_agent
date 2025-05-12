@@ -43,6 +43,6 @@ public class calculator {
         System.out.println("Multiplication: " + calc.multiply(5, 3));
         System.out.println("Division: " + calc.divide(5, 0));
         System.out.println("Modulus: " + calc.modulus(5, 3));
-        System.out.println("Percentage: " + calc.percentage(5, 3));
+        System.out.println("Percentage: " + calc.percentage(0, 3));
     }
 }
