@@ -1,4 +1,5 @@
 package main.java;
+import java.util.Date;
 
 public class customRules {
     public static void main(String[] args) {
@@ -26,6 +27,9 @@ public class customRules {
         } else {
             System.out.println("Strings are not equal");
         }
+
+        Date startDate = new Date();
+        System.out.println("Start date: " + startDate);
 
     }
 }
