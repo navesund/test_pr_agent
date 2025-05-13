@@ -8,7 +8,7 @@ inline_code_comments = true
 run_on_commit = true
 minimal_commits_for_incremental_review = 0
 enable_help_text = true
-extra_instructions = "Comment only the critical issue like logical errors, security vulnerabilities and potential bugs"
+#extra_instructions = "Comment only the critical issue like logical errors, security vulnerabilities and potential bugs"
 
 [pr_code_suggestions]
 summarize = false
@@ -16,7 +16,7 @@ auto_extended_mode = true
 commitable_code_suggestions = true
 suggestions_score_threshold = 7
 enable_help_text = true
-extra_instructions = "Comment only the critical issue like logical errors, security vulnerabilities and potential bugs"
+#extra_instructions = "Comment only the critical issue like logical errors, security vulnerabilities and potential bugs"
 #extra_instructions = "Detect usage of System.out.println and suggest to use logger instead.Detect the usage of Thread.sleep.Avoid empty catch blocks. Encourage to use equalsIgnoreCase instead of equals"
 
 [github_action_config]
