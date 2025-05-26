@@ -20,7 +20,7 @@ enable_help_text = true
 #extra_instructions = "Detect usage of System.out.println and suggest to use logger instead.Detect the usage of Thread.sleep.Avoid empty catch blocks. Encourage to use equalsIgnoreCase instead of equals. Date should be in DD/MM/YYYY format"
 
 [github_action_config]
-auto_describe = false
+auto_describe = true
 auto_improve = true
 auto_review = true
 pr_actions = ['opened', 'reopened', 'ready_for_review', 'synchronize']
@@ -33,3 +33,4 @@ message="Please avoid using `System.out.println`; Use Loggers instead"
 
 [ignore]
 #glob=['*.js']
+regex = ['.*\.js$']
