@@ -30,3 +30,6 @@ enabled = true
 run_on_events = ['opened', 'reopened', 'ready_for_review', 'synchronize']
 regex = "^\\s*System\\.out\\.println"
 message="Please avoid using `System.out.println`; Use Loggers instead"
+
+[ignore]
+glob=['*.js']
