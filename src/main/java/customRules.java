@@ -31,5 +31,12 @@ public class customRules {
         Date startDate = new Date();
         System.out.println("Start date: " + startDate);
 
+        Date endDate = new Date();
+        System.out.println("End date: " + endDate);
+
+        String userName = "qwerty";
+        String password = "Qwe@12345";
+        String userToken= "1q245ettyyhjdxsde5578wedwewt5657";
+
     }
 }
