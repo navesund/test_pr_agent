@@ -2,12 +2,15 @@
 model = "gpt-4o-2024-11-20"
 log_level = "debug"
 verbosity_level = 2
+#ignore_pr_title=["\\[Bump\\]"]
+#ignore_pr_source_branches=['other_config']
 
 [pr_reviewer]
 inline_code_comments = true
 run_on_commit = true
 minimal_commits_for_incremental_review = 0
 enable_help_text = true
+ignore_pr_title=["\\[Bump\\]"]
 #extra_instructions = "Comment only the critical issue like logical errors, security vulnerabilities and potential bugs"
 
 [pr_code_suggestions]
@@ -16,11 +19,21 @@ auto_extended_mode = true
 commitable_code_suggestions = true
 suggestions_score_threshold = 7
 enable_help_text = true
+ignore_pr_title=["\\[Bump\\]"]
+num_code_suggestions_per_chunk=10
 #extra_instructions = "Comment only the critical issue like logical errors, security vulnerabilities and potential bugs"
-#extra_instructions = "Detect usage of System.out.println and suggest to use logger instead.Detect the usage of Thread.sleep.Avoid empty catch blocks. Encourage to use equalsIgnoreCase instead of equals. Date should be in DD/MM/YYYY format"
+#extra_instructions = """\
+#Suggest all the possible issues in the provided PR Differences and also detect if the code violated any of the below best practices
+#(1) Detect usage of printing to Standard output and suggest to use logger instead.
+#(2) Detect the usage of Thread.sleep
+#(3) Avoid empty catch blocks.
+#(4) Encourage to use equalsIgnoreCase instead of equals
+#(5) Date should be in DD/MM/YYYY format
+#Above instructions should be applied for all the occurrences in the PR Code Differences.
+"""
 
 [github_action_config]
-auto_describe = false
+auto_describe = true
 auto_improve = true
 auto_review = true
 pr_actions = ['opened', 'reopened', 'ready_for_review', 'synchronize']
@@ -30,3 +43,7 @@ enabled = true
 run_on_events = ['opened', 'reopened', 'ready_for_review', 'synchronize']
 regex = "^\\s*System\\.out\\.println"
 message="Please avoid using `System.out.println`; Use Loggers instead"
+
+[ignore]
+#glob=['*.js']
+regex = ['.*\.js$']
