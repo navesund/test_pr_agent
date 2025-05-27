@@ -2,7 +2,7 @@
 model = "gpt-4o-2024-11-20"
 log_level = "debug"
 verbosity_level = 2
-ignore_pr_title=["\[Bump\]"]
+ignore_pr_title=["\\[Bump\\]"]
 
 [pr_reviewer]
 inline_code_comments = true
