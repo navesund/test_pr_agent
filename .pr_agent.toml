@@ -2,6 +2,7 @@
 model = "gpt-4o-2024-11-20"
 log_level = "debug"
 verbosity_level = 2
+ignore_pr_title=["\\[Bump\\]"]
 
 [pr_reviewer]
 inline_code_comments = true
@@ -20,7 +21,7 @@ enable_help_text = true
 #extra_instructions = "Detect usage of System.out.println and suggest to use logger instead.Detect the usage of Thread.sleep.Avoid empty catch blocks. Encourage to use equalsIgnoreCase instead of equals. Date should be in DD/MM/YYYY format"
 
 [github_action_config]
-auto_describe = false
+auto_describe = true
 auto_improve = true
 auto_review = true
 pr_actions = ['opened', 'reopened', 'ready_for_review', 'synchronize']
@@ -30,3 +31,7 @@ enabled = true
 run_on_events = ['opened', 'reopened', 'ready_for_review', 'synchronize']
 regex = "^\\s*System\\.out\\.println"
 message="Please avoid using `System.out.println`; Use Loggers instead"
+
+[ignore]
+#glob=['*.js']
+regex = ['.*\.js$']
