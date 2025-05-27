@@ -25,6 +25,7 @@ extra_instructions = """\
 (3) Avoid empty catch blocks.
 (4) Encourage to use equalsIgnoreCase instead of equals
 (5) Date should be in DD/MM/YYYY format
+Above instructions should be applied for all the occurrences in the PR Code Differences.
 """
 
 [github_action_config]
