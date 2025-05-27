@@ -1,12 +1,12 @@
-function login() {
+function login(username, password) {
     fetch("https://api.example.com/login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            username: "username",
-            password: "qwerty"
+            username: username,
+            password: password
         })
     })
     .then(response => response.json())
