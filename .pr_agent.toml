@@ -2,14 +2,15 @@
 model = "gpt-4o-2024-11-20"
 log_level = "debug"
 verbosity_level = 2
-ignore_pr_title=["\\[Bump\\]"]
-ignore_pr_source_branches=['other_config']
+#ignore_pr_title=["\\[Bump\\]"]
+#ignore_pr_source_branches=['other_config']
 
 [pr_reviewer]
 inline_code_comments = true
 run_on_commit = true
 minimal_commits_for_incremental_review = 0
 enable_help_text = true
+ignore_pr_title=["\\[Bump\\]"]
 #extra_instructions = "Comment only the critical issue like logical errors, security vulnerabilities and potential bugs"
 
 [pr_code_suggestions]
@@ -18,6 +19,7 @@ auto_extended_mode = true
 commitable_code_suggestions = true
 suggestions_score_threshold = 7
 enable_help_text = true
+ignore_pr_title=["\\[Bump\\]"]
 #extra_instructions = "Comment only the critical issue like logical errors, security vulnerabilities and potential bugs"
 extra_instructions = """\
 (1) Detect usage of printing to Standard output and suggest to use logger instead.
