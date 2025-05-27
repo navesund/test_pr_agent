@@ -34,9 +34,51 @@ public class customRules {
         Date endDate = new Date();
         System.out.println("End date: " + endDate);
 
-        String userName = "qwerty";
-        String password = "Qwe@12345";
-        String userToken= "1q245ettyyhjdxsde5578wedwewt5657";
+        UserService userService = new UserService("admin", "@dmin123");
+        if(userService.authenticate("admin", "@dmin123")) {
+            System.out.println("User authenticated successfully");
+            System.out.println("User Name: " + userService.getUserName());
+            System.out.println("Email: " + userService.getEmail());
+            System.out.println("User Token: " + userService.getUserToken());
+        } else {
+            System.out.println("Authentication failed");
+        }
+
 
     }
+}
+
+class UserService {
+    String userName;
+    String password;
+    String email;
+    String userToken;
+
+    public UserService(String userName, String password) {
+        this.userName = userName;
+        this.password = password;
+        this.email = "qwerty@abc.com";
+        this.userToken = "12wew233sfdgr657fgfght768fghfgg";
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getUserToken() {
+        return userToken;
+    }
+
+    public boolean authenticate(String userName, String password) {
+        return this.userName.equals(userName) && this.password.equals(password);
+    }
+
 }
