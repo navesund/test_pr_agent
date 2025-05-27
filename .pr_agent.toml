@@ -23,6 +23,7 @@ ignore_pr_title=["\\[Bump\\]"]
 num_code_suggestions_per_chunk=10
 #extra_instructions = "Comment only the critical issue like logical errors, security vulnerabilities and potential bugs"
 extra_instructions = """\
+Suggest all the possible issues in the provided PR Differences and also detect if the code violated any of the below best practices
 (1) Detect usage of printing to Standard output and suggest to use logger instead.
 (2) Detect the usage of Thread.sleep
 (3) Avoid empty catch blocks.
