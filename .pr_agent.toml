@@ -19,7 +19,13 @@ commitable_code_suggestions = true
 suggestions_score_threshold = 7
 enable_help_text = true
 #extra_instructions = "Comment only the critical issue like logical errors, security vulnerabilities and potential bugs"
-#extra_instructions = "Detect usage of System.out.println and suggest to use logger instead.Detect the usage of Thread.sleep.Avoid empty catch blocks. Encourage to use equalsIgnoreCase instead of equals. Date should be in DD/MM/YYYY format"
+extra_instructions = """\
+(1) Detect usage of printing to Standard output and suggest to use logger instead.
+(2) Detect the usage of Thread.sleep
+(3) Avoid empty catch blocks.
+(4) Encourage to use equalsIgnoreCase instead of equals
+(5) Date should be in DD/MM/YYYY format
+"""
 
 [github_action_config]
 auto_describe = true
