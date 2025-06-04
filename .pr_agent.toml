@@ -1,5 +1,5 @@
 [config]
-model = "gpt-4o"
+model = "gpt-4o-mini"
 log_level = "debug"
 verbosity_level = 2
 #ignore_pr_title=["\\[Bump\\]"]
